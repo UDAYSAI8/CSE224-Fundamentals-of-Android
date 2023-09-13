@@ -1,1 +1,37 @@
-W
+1.True or False: Modifiers can be used to define margins and padding in Jetpack Compose.
+->True.
+
+2.Which of the following Material Components can be implemented using Jetpack Compose? Select all that apply.
+->Card.
+->text-field.
+->button.
+
+3.Which of the following is the correct way to add a spacing of 10 dp around all four sides of a text composable?
+->Text(
+    text = “Hello World!”,
+    modifier = Modifier.padding(10.dp)
+ )
+
+4.Which of the following is a keyword that retains the value of a state variable after recomposition?
+->remember.
+
+5.Which of the following does the button composable expect you to define?
+->onClick.
+
+6.What is a BottomSheetScaffold?
+->A Ul pattern that slides up from the bottom of the screen.
+
+7.What are the individual UI elements called in Material Design?
+->Material Components.
+
+8.Which of the following makes material components in Compose adaptable?
+->Lambdas.
+
+9.Which of the following Jetpack Compose Material components can be implemented as built-in composables? Select four that apply.
+->Card.
+->Slider.
+->TextField.
+->Button.
+
+10.What are UI Patterns? 
+->UI Patterns are reusable solutions to common user interface problems during Android Ul building in Jetpack Compose.
