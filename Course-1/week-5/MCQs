@@ -1,0 +1,112 @@
+1.True or False: Android does not provide a way for the 3rd party app to start up activities belonging to other apps.
+->False.
+
+2.How is a Compose UI element represented?
+->Special Function.
+
+3.How are composables positioned in the Box layout?
+->Placed on top of each other.
+
+4.True or False: Applying modifiers to a composable in different order may produce a different result.
+->True.
+
+5.What is Recomposition?
+->Recomposition is when composable functions are called to update after the state value changes.
+
+6.Which of the following are part of Jetpack navigation?
+->NavGraph, NavController, NavHost
+
+7.True or False: Lazy components only compose a subset of composables that are visible in viewport rather than composing it all at once. 
+->True.
+
+8.True or False: Modifying the Button style in the theme will change the appearance of every button in the application unless the theme style is overridden.
+->True
+
+9.Which unit would you use to set text size?
+->sp
+
+10.What will the output of this code be?
+ var visible by remember { mutableStateOf(true) 
+} Column { 
+    if (visible) { 
+    Text(text = "Hello") 
+} Button(onClick = { visible = !visible }) { 
+    Text("My Button") 
+    } 
+}
+->The first Button click will instantly hide the Text and the following Button click will instantly show the Text.
+
+11.Which of the following best describes what an Activity is?
+->The app component that contains the user interface.
+
+12.Which of the following is a container element that enables the grouping of elements
+->ViewGroup.
+
+13.Which of the following lifecycle states does an Activity spend the most time in?
+->Resumed.
+
+14.Which of the following are examples of view groups? Select all that apply.
+-> FrameLayout, RelativeLayout, LinearLayout.
+
+15.Which of the following is a disadvantage of using XML to create a User Interface in Android Studio?
+->XML can be difficult to debug.
+
+16.Which of the following is the correct way to define a composable function?
+->@Composable 
+fun Profile(username: String) {
+ Text(text = “$username”)
+} 
+
+17.Which of the following annotations is used to denote a composable component?
+->@Composable.
+
+18.Which of the following built-in layouts in Compose places composables horizontally?
+->row.
+
+19.In which file must you add the dependency for Jetpack Compose Preview to enable previewing for your project?
+->box
+
+20.Which of the following modifiers is used to set the background color of a composable?
+->background.
+
+21.Imagine you have an Image composable displaying a cat with a height of 300 dp. Which of the following is the correct way to add rounded corners of 30 dp to the image? 
+->Image(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).clip(RoundedCornerShape(30.dp))
+)
+
+22.Which of the following is the term for the response to an event or executing a certain piece of code when an event occurs?
+->handling the event.
+
+23.Which of the following event modifiers is used to specify a function to be executed when a user clicks a specific composable?
+->Modifier.clickable.
+
+24.In a scenario where a user has partially completed a form, then changes their device’s orientation, the UI will be recreated. Which of the following will ensure the entered data is preserved?
+->state.
+
+25.Which of the following informs developers on how to use and organize individual UI elements and exposes patterns, themes and examples of UI designs and layouts at various levels?
+->A Design System.
+
+26.Imagine you want to create the ability for the user to navigate between two screens, Home and Dashboard. Which of the following is the correct way to define destination objects that implement the below interface?
+interface Destinations{
+    val route:String
+}
+->object Home:Destinations{
+    override val route = “Home”
+}
+object Dashboard:Destinations{
+    override val route = “Dashboard”
+}
+
+27.Which of the following Jetpack Compose layout arrangements adds equal space to all children?
+->space evenly.
+
+28.When would you use a lazy layout?
+->When you have a large number of items to display as a list.
+
+29.Which of the following allows you to separate application design details from the UI structure and behavior?
+->composables.
+
+30.Imagine you have a variable that stores a value which will be animated. Which of the following is used in the variable declaration to retain the state during recomposition?
+->mutableStateOf.
