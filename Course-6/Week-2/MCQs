@@ -1,0 +1,34 @@
+1.You have a Student class that is defined like this:
+class Student(
+val name: String,
+val course: String
+)
+Given a list of students, how do you return a list of them filtered by name containing a particular String?
+->return list.filter { it.name.contains(searchPhrase, ignoreCase = true) }
+
+2.How do you create a NavController?
+->rememberNavController() from within a Composable
+
+3.What dependencies does a NavHost constructor have?
+->A NavController, a start destination and Composable destinations
+
+4.You have a MenuItem class that is defined like this:
+->return list. sortedBy { it. title }
+
+5.In what format was the data returned from the API in this project?
+->JSON.
+
+6.What persistence solution did you use to save the user’s details?
+->SharedPreferences
+
+7.What persistence solution did you use to save the menu items?
+->Room.
+
+8.Which Composable should you use for an input field?
+->TextField.
+
+9.NavGraph is responsible for navigating between destinations while keeping track and manipulating the back stack.
+->False.
+
+10.How do you add click behavior to a Button Composable?
+->Button(onClick = { ... }).
