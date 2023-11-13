@@ -1,0 +1,61 @@
+1.What is a Theme composed of?
+->A collection of attributes.
+
+2.Which of the following hexadecimal values will produce the white color?
+->OXFFFFFFFF
+
+3.True or False: The main difference between dp (density independent pixel) and sp (scalable pixel) is that it takes the text size setting of the user device into consideration when deciding what text size should be displayed.
+->True.
+
+4.What will be the output of the following code?
+Text(
+buitdAnnotatedString{
+  withStyte(style = SpanSty1e(coIor =(Color. Blue)) { 
+    append("H")
+    }
+    append("ello")
+}
+->The letter "H" has blue color and the text "ello" has black color.
+
+5.What will display on the screen when the following code is run? 
+Surface(color =Color. Red) {}
+->The screen will be red.
+
+6.Which of the following is an optional modifier that can be used to change the color of text within a Text composable?
+->color
+
+7.Imagine you have a Surface with a Text composable as its content. Which of the following modifiers will set the minimum height required to show the text?
+->wrapContentSize
+
+8.Which of the following is the composable that animates the appearance and disappearance of its content?
+->AnimatedVisibi1ity.
+
+9.What will be the output of the following code?
+var visible by remember{
+  mutabteStateOf(true)
+}
+Column{
+  AnimatedVisibitity(visible = visible) {
+    Text(text ="Hello, world !")
+    Button(onCIick = { visible = !visible } )
+  Text( text: "Button")
+}
+}
+->The first Button click will start the fade out animation of the Text and the following Button click will start fade in animation of the Text.
+
+10.Which of the following will cause the text “Hello World” to fade in and out after clicking a button?
+->var visible by remember {
+      mutableStateOf(true)
+}
+Column {
+      Button(onClick = {  visible = !visible  })  {
+            Text(“Button  “)
+      }
+      AnimatedVisibility(
+            visible = visible, 
+            enter = fadeIn(),
+            exit = fadeOut()
+      )  {
+            Text(text = “Hello World”)
+      }
+}
