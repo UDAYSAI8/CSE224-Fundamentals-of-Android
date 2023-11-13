@@ -1,0 +1,51 @@
+1.What is a common attribute of SharedPreferences and Room?
+->They both store data, Their persisted data survives device restarts.
+
+2.To navigate in Compose, you call navigate. On what component do you call navigate?
+->NavController.
+
+3.Consider the following snippet. What elements would it return?
+listOf("John", "George", "Paul", "Ringo").filter { it.contains("o") }
+->"John", "George", "Ringo"
+
+4.What is a Composable?
+->A function that emits a UI element
+
+5.What data type is presented below?
+ {
+  Appetizers: {
+    menu: {
+      'Spinach Artichoke Dip',
+      'Hummus',
+      'Fried Calamari Rings',
+      'Fried Mushrooms'
+    }
+  },
+  Salads: {
+    menu: {
+      'Greek',
+      'Caesar',
+      'Mediterranean Tuna Salad',
+      'Grilled Chicken Salad'
+    }
+  }
+}
+->JSON
+
+6.What database type does Room use?
+->SQL.
+
+7.Consider the following code snippets:
+val state = a + b
+val state by remember { a + b }
+Within the context of a Composable, how do the two differ?
+->Snippet 1 will be evaluated on every composition, while snippet 2 will be evaluated once.
+
+8.Select all the valid Kotlin collection types below:
+-> Map, Set, List.
+
+9.How can you extend a final class?
+->Using an extension function
+
+10.In JUnit4, what annotation do you use before each test function?
+->@Test
