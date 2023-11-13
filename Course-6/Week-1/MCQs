@@ -1,1 +1,29 @@
+1.Complete the sentence: A wireframe's purpose is
+->To create a basic structure for each screen in the design before things like branding, colors and images are considered.
 
+2.Content blocks are parts of a wireframe.
+->True.
+
+3.To create a nice, smooth animation in Figma, you can use the Clever animate option.
+->False.
+
+4.Which of these form part of the UX design thinking process? Choose all that apply.
+->Test, Prototype, Ideate, Define, Empathize.
+
+5.What command do you use to start a new git repository?
+->git init.
+
+6.Which service offers source control management (SCM)?
+->GitHub.
+
+7.Which Integrated Development Environment (IDE) do you use to develop Android apps?
+->Android Studio.
+
+8.Which account must you have to distribute Android apps on the Play Store?
+->Google Developer.
+
+9.What is Jetpack Compose?
+->A User Interface (Ul) toolkit
+
+10.What are the building blocks of Jetpack Compose?
+->Composables.
